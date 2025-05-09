@@ -13,11 +13,11 @@ bot.on('text', async (ctx) => {
     })
 
     const result = vm.run(code)
-    ctx.reply(`✅ Результат:\n\`\`\`js\n${String(result)}\n\`\`\``, {
+    ctx.reply(`✅ Result:\n\`\`\`js\n${String(result)}\n\`\`\``, {
       parse_mode: 'Markdown',
     })
   } catch (err) {
-    ctx.reply(`❌ Ошибка:\n\`\`\`\n${err.message}\n\`\`\``, {
+    ctx.reply(`❌ Error:\n\`\`\`\n${err.message}\n\`\`\``, {
       parse_mode: 'Markdown',
     })
   }
